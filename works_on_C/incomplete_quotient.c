@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int find_quotient(int a, int b){
-	  int r = a;
+	int r = a;
     if (b == 0) 
       r = -1; // Деление на ноль
       
