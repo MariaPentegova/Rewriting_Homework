@@ -8,6 +8,7 @@ int count_zero(int *arr, int len){
   }
   return c;
 }
+
 int main(){
   int arr[]={2, 0, 6, 0, 0, 0, -3, 4};
   int len = sizeof(arr)/sizeof(*arr);
