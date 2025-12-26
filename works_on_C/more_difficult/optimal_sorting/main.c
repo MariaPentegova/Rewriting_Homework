@@ -2,17 +2,17 @@
 #include <stdio.h>
 
 void swap(int *a, int *b) {
-    int temp = *a;
+    int t = *a;
     *a = *b;
-    *b = temp;
+    *b = t;
 }
 
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
-        int pivot = arr[high];
+        int p = arr[high];
         int i = low - 1;
         for (int j = low; j < high; j++) {
-            if (arr[j] <= pivot) {
+            if (arr[j] <= p) {
                 i++;
                 swap(&arr[i], &arr[j]);
             }
@@ -33,16 +33,16 @@ int main() {
         n++;
     }
 
-    int original[MAX_SIZE];
+    int orig[MAX_SIZE];
     for (int i = 0; i < n; i++) {
-        original[i] = arr[i];
+        orig[i] = arr[i];
     }
 
     quickSort(arr, 0, n - 1);
 
     int changed_positions = 0;
     for (int i = 0; i < n; i++) {
-        if (original[i] != arr[i]) {
+        if (orig[i] != arr[i]) {
             changed_positions++;
         }
     }
