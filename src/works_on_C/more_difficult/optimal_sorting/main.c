@@ -2,7 +2,6 @@
 
 #define MAX_SIZE 100
 
-// Объявление функции на ассемблере
 extern int sort(int *arr, int size);
 
 int main() {
@@ -15,7 +14,7 @@ int main() {
         int c = getchar();
         if (c == '\n' || c == EOF)
             break;
-        ungetc(c, stdin); // возвращаем символ назад, если это не перенос строки
+        ungetc(c, stdin); 
     }
 
     if (n == 0) {
