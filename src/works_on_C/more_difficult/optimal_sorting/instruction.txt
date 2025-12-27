@@ -1,4 +1,2 @@
 To build the code:
-gcc -S work.c
-
-# work.c - название исходного файла на языке С
+gcc -m64 -o sort_app main.c sort.s
