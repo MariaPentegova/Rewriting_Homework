@@ -32,12 +32,3 @@ class Graph:
     def __iter__(self):
         start = list(self.adj_list.keys())[0]
         return iter(self.dfs(start))
-#пример
-g = Graph()
-g.add_edge('A', 'B')
-g.add_edge('A', 'C')
-g.add_edge('B', 'D')
-
-print("Обход DFS:", g.dfs('A'))  # ['A', 'C', 'B', 'D']
-
-  
