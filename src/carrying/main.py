@@ -38,11 +38,3 @@ def uncurry(curry_func, n):
         return res
 
     return uncurried
-
-def sum3(x, y, z):
-    return x + y + z
-
-sum3_curry = curry(sum3, 3)
-sum3_uncurry = uncurry(sum3_curry, 3)
-print(sum3_curry(1)(2)(3))    # 6
-print(sum3_uncurry(1, 2, 3))  # 6 
