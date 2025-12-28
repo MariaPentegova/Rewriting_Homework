@@ -1,2 +1,0 @@
-To build the code:
-gcc -m64 -o sort_app main.c sort.s
