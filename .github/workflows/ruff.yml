@@ -1,0 +1,32 @@
+name: Ruff Linting
+
+on:
+  push:
+    branches: 
+    - main
+    - release/*
+  pull_request:
+    branches: 
+    - main
+    - release/*
+  schedule:
+  - cron: "0 2 * * 1-5"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest 
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4 
+
+    - name: Set up Python
+      uses: actions/setup-python@v5 
+      with:
+        python-version: '3.11' 
+
+    - name: Install Ruff
+      run: pip install ruff 
+
+    - name: Run Ruff check
+      run: ruff check .
