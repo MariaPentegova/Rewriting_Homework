@@ -17,3 +17,9 @@ add_executable(main src/works_on_C/more_difficult/optimal_sorting/main.c)
 add_executable(check_string src/works_on_C/check_string.c)
 add_executable(count_zero src/works_on_C/count_zero.c)
 add_executable(find_string src/works_on_C/find_string.c)
+
+add_executable(Lucky tickets src/works_on_C/Lucky tickets.c)
+add_executable(array_flip src/works_on_C/array_flip.c)
+add_executable(incomplete_quotient src/works_on_C/incomplete_quotient.c)
+add_executable(fast_count src/works_on_C/fast_count.c)
+
