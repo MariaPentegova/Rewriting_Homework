@@ -23,3 +23,5 @@ add_executable(array_flip src/works_on_C/array_flip.c)
 add_executable(incomplete_quotient src/works_on_C/incomplete_quotient.c)
 add_executable(fast_count src/works_on_C/fast_count.c)
 
+target_compile_options(sorting_station PRIVATE -Wall -Wextra -Werror)
+target_compile_options(advanced_bracket-2 PRIVATE -Wall -Wextra -Werror)
