@@ -13,3 +13,7 @@ add_executable(counting_rhyme src/works_on_C/more_difficult/counting_rhyme.c)
 add_executable(sorting_list src/works_on_C/more_difficult/sorting_list.c)
 
 add_executable(main src/works_on_C/more_difficult/optimal_sorting/main.c)
+
+add_executable(check_string src/works_on_C/check_string.c)
+add_executable(count_zero src/works_on_C/count_zero.c)
+add_executable(find_string src/works_on_C/find_string.c)
